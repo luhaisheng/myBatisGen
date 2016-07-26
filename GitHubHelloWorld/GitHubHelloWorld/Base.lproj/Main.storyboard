@@ -25,20 +25,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCq-GS-bSq">
-                                <rect key="frame" x="40" y="341" width="520" height="30"/>
+                                <rect key="frame" x="20" y="341" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.1058823529" green="0.62745098040000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Push View"/>
+                                <state key="normal" title="Push First View"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHc-Jk-eaB">
+                                <rect key="frame" x="20" y="399" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.62745098040000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Push Second View"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zCq-GS-bSq" firstAttribute="top" secondItem="viy-p5-rrV" secondAttribute="bottom" constant="30" id="67j-nf-IM4"/>
+                            <constraint firstAttribute="trailing" secondItem="rHc-Jk-eaB" secondAttribute="trailing" constant="20" id="C2D-ju-Uwa"/>
+                            <constraint firstItem="zCq-GS-bSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="G1Q-95-JBa"/>
                             <constraint firstItem="viy-p5-rrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iqv-Er-mEi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zCq-GS-bSq" secondAttribute="trailing" constant="20" id="Muv-b4-dyy"/>
+                            <constraint firstItem="rHc-Jk-eaB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QAf-NB-MU9"/>
                             <constraint firstItem="zCq-GS-bSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="QHm-1D-jQ7"/>
+                            <constraint firstAttribute="trailing" secondItem="zCq-GS-bSq" secondAttribute="trailing" constant="20" id="Txl-zt-vaQ"/>
                             <constraint firstItem="viy-p5-rrV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3U-sD-a8Y"/>
+                            <constraint firstItem="rHc-Jk-eaB" firstAttribute="top" secondItem="zCq-GS-bSq" secondAttribute="bottom" constant="28" id="roI-bG-A1k"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Muv-b4-dyy"/>
+                                <exclude reference="QHm-1D-jQ7"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
