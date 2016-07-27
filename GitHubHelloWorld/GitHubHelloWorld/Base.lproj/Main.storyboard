@@ -52,6 +52,9 @@
                                 <rect key="frame" x="20" y="399" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.1058823529" green="0.62745098040000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Push Second View"/>
+                                <connections>
+                                    <segue destination="WKm-0C-48K" kind="push" id="Mhx-pf-sLz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -99,7 +102,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOu-Ik-p0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="304"/>
+            <point key="canvasLocation" x="1010" y="86"/>
+        </scene>
+        <!--secondView-->
+        <scene sceneID="6S4-jq-Eg7">
+            <objects>
+                <viewController id="WKm-0C-48K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihV-pl-Nx7"/>
+                        <viewControllerLayoutGuide type="bottom" id="xYm-WS-QQ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EuQ-5r-GG7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="secondView" id="2L1-WP-vWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlc-ne-jqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="749"/>
         </scene>
     </scenes>
 </document>
