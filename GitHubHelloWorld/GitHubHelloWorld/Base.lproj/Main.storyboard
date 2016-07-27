@@ -92,7 +92,25 @@
                     <view key="view" contentMode="scaleToFill" id="QAC-Fk-MCM">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jM4-74-7Fh">
+                                <rect key="frame" x="20" y="253" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.62745098040000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Push View From Branch2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="27N-WV-tWj" kind="push" id="j0i-uw-1jJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jM4-74-7Fh" secondAttribute="trailing" constant="20" id="odh-RS-qE7"/>
+                            <constraint firstItem="jM4-74-7Fh" firstAttribute="centerX" secondItem="QAC-Fk-MCM" secondAttribute="centerX" id="si0-TI-3cZ"/>
+                            <constraint firstItem="jM4-74-7Fh" firstAttribute="centerY" secondItem="QAC-Fk-MCM" secondAttribute="centerY" id="v3y-z7-Sr6"/>
+                            <constraint firstItem="jM4-74-7Fh" firstAttribute="leading" secondItem="QAC-Fk-MCM" secondAttribute="leading" constant="20" id="veH-Wi-Q3j"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="firstView" id="Mke-PT-gAa"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -100,6 +118,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOu-Ik-p0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930" y="304"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="57z-Pm-hyC">
+            <objects>
+                <viewController id="27N-WV-tWj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3pF-bJ-0sF"/>
+                        <viewControllerLayoutGuide type="bottom" id="F6P-5Z-a3r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="87i-61-6Rn">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wa8-6S-ZsR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rf4-Gx-uIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="304"/>
         </scene>
     </scenes>
 </document>
